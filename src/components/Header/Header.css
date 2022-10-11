@@ -1,7 +1,7 @@
 .active {
-    background: #000;
+    color: rgb(75, 198, 207);
+    transition: all .3s ease;
 }
-
 .navbar a {
     margin: 0 10px; 
 }
