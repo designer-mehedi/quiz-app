@@ -8,6 +8,7 @@ const Quiz = () => {
     // console.log(quizData); 
     return (
         <div className='px-4 lg:px-32 sm:px-4 py-10'>
+            <h2 className='pb-3'>Total Quiz: {quizData.length}</h2>
             {
                 quizData.map(quiz => <QuizDetails quiz={quiz} key={quiz.id}></QuizDetails>)
             }
