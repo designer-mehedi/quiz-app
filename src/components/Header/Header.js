@@ -4,7 +4,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <header className='container px-32 bg-indigo-600 flex justify-between text-white py-5'>
+        <header className='px-4 lg:px-32 sm:px-4 bg-indigo-600 flex justify-between text-white py-5'>
             <div className="nav-brand font-bold">
                 <h1>Quiz World</h1>
             </div>
