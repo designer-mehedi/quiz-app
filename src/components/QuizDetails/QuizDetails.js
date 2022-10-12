@@ -12,7 +12,7 @@ const QuizDetails = ({ quiz }) => {
     const handleAnswer = (answer) => {
         if (answer === correctAnswer) {
             // console.log('This is correct')
-            toast.success('This is correct', {
+            toast.success('Correct Answer', {
                 position: "top-center",
                 autoClose: 1500,
                 hideProgressBar: true,
@@ -20,7 +20,7 @@ const QuizDetails = ({ quiz }) => {
             })
         } else {
             // console.log('This is incorrect')
-            toast.error('This is incorrect', {
+            toast.error('Wrong Answer', {
                 position: "top-center",
                 autoClose: 1500,
                 hideProgressBar: true,
@@ -45,7 +45,7 @@ const QuizDetails = ({ quiz }) => {
                 </button>
                 <ToastContainer />
             </div>
-            <h2 className='bg-neutral-200 py-5'>{question}</h2>
+            <h2 className='bg-neutral-200 py-5'>{question.slice(3, -4)}</h2>
             <div className='sm:grid-cols-1 grid lg:grid-cols-2 grid-cols-1 gap-4 pb-16 pt-4 text-white'>
                 <button onClick={() => handleAnswer(options[0])} className='bg-indigo-500 px-4 py-3 w-full btn'>{options[0]}</button>
                 <button onClick={() => handleAnswer(options[1])} className='bg-indigo-500 px-4 py-3 w-full btn'>{options[1]}</button>

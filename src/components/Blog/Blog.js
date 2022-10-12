@@ -3,9 +3,10 @@ import './blog.css';
 
 const Blog = () => {
     return (
-        <div className='lg:px-32 md:px-10 bg-zinc-100 py-10'>
+        <div className='lg:px-32 md:px-10 bg-zinc-100 py-10 blog'>
             <div className='blog-posts w-[80%] m-auto'>
-                <div className='post-1 lg:flex gap-5 shadow-lg rounded-lg  border-2 border-indigo-600'>
+                <div className='post-1 lg:flex gap-5 
+                shadow-lg rounded-lg  border-2 border-indigo-600'>
                     <div className='lg:w-1/2'>
                         <img className='rounded-lg h-full' src="https://crowdbotics.ghost.io/content/images/2019/07/react-router.jpg" alt="" />
                     </div>
