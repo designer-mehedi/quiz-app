@@ -1,0 +1,6 @@
+.banner {
+    background: radial-gradient(rgba(239, 33, 33, 0.8), rgba(48, 65, 162, 0.8)), url('../../../public/memphis-style-yellow-quiz-time-banner-design-promotion_626143-386.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 250px 0;
+}

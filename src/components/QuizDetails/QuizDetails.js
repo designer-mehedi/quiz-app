@@ -3,6 +3,7 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import './QuizDetails.css'; 
 
 const QuizDetails = ({ quiz }) => {
     // console.log(quiz)
@@ -32,6 +33,7 @@ const QuizDetails = ({ quiz }) => {
         toast.info(correctAnswer, {
             position: "top-center",
             autoClose: 1500,
+            hideProgressBar: true,
             theme: "dark"
         })
     }
@@ -45,10 +47,10 @@ const QuizDetails = ({ quiz }) => {
             </div>
             <h2 className='bg-neutral-200 py-5'>{question}</h2>
             <div className='sm:grid-cols-1 grid lg:grid-cols-2 grid-cols-1 gap-4 pb-16 pt-4 text-white'>
-                <button onClick={() => handleAnswer(options[0])} className='bg-indigo-500 px-4 py-3 w-full'>{options[0]}</button>
-                <button onClick={() => handleAnswer(options[1])} className='bg-indigo-500 px-4 py-3 w-full'>{options[1]}</button>
-                <button onClick={() => handleAnswer(options[2])} className='bg-indigo-500 px-4 py-3 w-full'>{options[2]}</button>
-                <button onClick={() => handleAnswer(options[3])} className='bg-indigo-500 px-4 py-3 w-full'>{options[3]}</button>
+                <button onClick={() => handleAnswer(options[0])} className='bg-indigo-500 px-4 py-3 w-full btn'>{options[0]}</button>
+                <button onClick={() => handleAnswer(options[1])} className='bg-indigo-500 px-4 py-3 w-full btn'>{options[1]}</button>
+                <button onClick={() => handleAnswer(options[2])} className='bg-indigo-500 px-4 py-3 w-full btn'>{options[2]}</button>
+                <button onClick={() => handleAnswer(options[3])} className='bg-indigo-500 px-4 py-3 w-full btn'>{options[3]}</button>
             </div>
         </div>
     );

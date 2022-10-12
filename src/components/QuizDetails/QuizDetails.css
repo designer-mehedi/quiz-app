@@ -1,0 +1,4 @@
+.btn:hover {
+    background: rgb(253, 54, 54);
+    transition: all .3s ease;
+}
